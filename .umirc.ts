@@ -3,14 +3,14 @@ import { IConfig } from 'umi-types';
 // ref: https://umijs.org/config/
 const config: IConfig =  {
   outputPath: './docs',
-  publicPath: '/umi-pro/',
+  // publicPath: '/umi-pro/',
   treeShaking: true,
   plugins: [
     // ref: https://umijs.org/plugin/umi-plugin-react.html
     ['umi-plugin-react', {
       antd: true,
       dva: true,
-      dynamicImport: { webpackChunkName: true },
+      dynamicImport: false,
       title: 'umi-pro',
       dll: false,
 
