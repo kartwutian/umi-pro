@@ -2,6 +2,8 @@ import { IConfig } from 'umi-types';
 
 // ref: https://umijs.org/config/
 const config: IConfig =  {
+  outputPath: './docs',
+  publicPath: '/umi-pro/',
   treeShaking: true,
   plugins: [
     // ref: https://umijs.org/plugin/umi-plugin-react.html
@@ -11,7 +13,7 @@ const config: IConfig =  {
       dynamicImport: { webpackChunkName: true },
       title: 'umi-pro',
       dll: false,
-      
+
       routes: {
         exclude: [
           /models\//,
