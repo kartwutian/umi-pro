@@ -3,7 +3,7 @@ import { IConfig } from 'umi-types';
 // ref: https://umijs.org/config/
 const config: IConfig =  {
   outputPath: './docs',
-  // publicPath: '/umi-pro/',
+  publicPath: './',
   treeShaking: true,
   plugins: [
     // ref: https://umijs.org/plugin/umi-plugin-react.html
